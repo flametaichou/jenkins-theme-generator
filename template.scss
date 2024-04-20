@@ -1,0 +1,171 @@
+/* For Jenkins version >2.346.1 */
+:root {
+    --primary: $colorPrimary;
+    --primary-hover: $colorPrimaryLighten1;
+    --primary-active: $colorPrimaryLighten2;
+    --secondary: $colorSecondary;
+    --accent-color: $colorAccent;
+
+    --blue: $colorBlue;
+    --light-blue: $colorBlueLighten1;
+    --dark-blue: $colorBlueDarken1;
+
+    --cyan: $colorCyan;
+    --light-cyan: $colorCyanLighten1;
+    --dark-cyan: $colorCyanDarken1;
+
+    --red: $colorRed;
+    --light-red: $colorRedLighten1;
+    --dark-red: $colorRedDarken1;
+
+    --orange: $colorOrange;
+    --light-orange: $colorOrangeLighten1;
+    --dark-orange: $colorOrangeDarken1;
+
+    --green: $colorGreen;
+    --light-green: $colorGreenLighten1;
+    --dark-green: $colorGreenDarken1;
+
+    --purple: $colorPurple;
+    --light-purple: $colorPurpleLighten1;
+    --dark-purple: $colorPurpleDarken1;
+
+    --very-light-grey: $colorGrey0;
+    --light-grey: $colorGrey1;
+    --medium-grey: $colorGrey2;
+    --dark-grey: $colorGrey3;
+    --black: $colorBlack;
+
+    --link-color: var(--blue);
+    --link-visited-color: var(--blue);
+    --link-color--hover: var(--light-blue);
+    --link-color--active: var(--light-blue);
+
+    --tabs-item-foreground--selected: var(--accent-color);
+
+    --header-bg-classic: var(--primary) !important;
+    --header-link-bg-classic-hover: var(--primary-hover) !important;
+    --header-link-bg-classic-active: var(--primary-active)  !important;
+
+    --breadcrumbs-bar-background: var(--light-grey);
+
+    --focus-input-border: var(--accent-color);
+    --focus-input-glow: rgba($colorAccent, .25);
+    --focus-btn-primary: rgba($colorAccent, .5);
+    --focus-btn-secondary: rgba($colorAccent, .5);
+    --selection-color: rgba($colorAccent, .3);
+
+    --form-input-glow--focus: 0 0 0 5px var(--focus-input-glow);
+
+    --menu-selected-color: var(--secondary);
+
+    --button-background: rgba($colorSecondaryLighten1, .1);
+    --button-background--hover: rgba($colorSecondaryLighten1, .175);
+    --button-background--active: rgba($colorSecondaryLighten1, .25);
+    --button-box-shadow--focus: rgba($colorSecondaryLighten1, .1);
+    --item-background--hover: rgba($colorSecondaryLighten1, .15);
+    --item-background--active: rgba($colorSecondaryLighten1, .225);
+    --item-box-shadow--focus: rgba($colorSecondaryLighten1, .105);
+
+    /* TODO: alert colors */
+
+    /* TODO: font-families */
+    /*
+    --font-family-sans: $fontFamilySans;
+    --font-family-mono: $fontFamilyMono;
+    */
+}
+
+/* Header */
+.am-button .am-monitor__count {
+    background-color: var(--orange);
+}
+
+.am-button.security-am .am-monitor__count {
+    background-color: var(--red);
+}
+
+/* Logo */
+#jenkins-head-icon {
+    content: url($imageLogo);
+}
+
+/* Icons */
+img[src$='schedule-build/images/schedule.svg'] {
+    content: url($iconScheduleBuild);
+}
+
+img[src$='bulk-builder/icons/builder-32x32.png'] {
+    content: url($iconBulkBuilder);
+}
+
+img[src$='lockable-resources/img/device.svg'] {
+    content: url($iconLockableResources);
+}
+
+img[src$='accelerated-build-now-plugin/images/icon-64x64.jpg'] {
+    content: url($iconAcceleratedBuildNow);
+}
+
+img[src$='pipeline-model-definition/images/24x24/restart-stage.png'] {
+    content: url($iconRestartStage);
+}
+
+.icon-fav-inactive {
+    background-image: url('../../../../../images/svgs/star-large.svg');
+}
+
+/* Progress-bars */
+table.progress-bar {
+  border: 1px solid var(--accent-color);
+}
+
+td.progress-bar-done {
+  background-color: var(--accent-color);
+}
+
+td.progress-bar-left {
+  background-color: var(--medium-grey);
+}
+
+table.progress-bar.red {
+  border: 1px solid var(--red);
+}
+
+table.progress-bar.red td.progress-bar-done {
+  background-color: var(--red);
+}
+
+/* Console output */
+.console-output {
+    background: var(--black) !important;
+    color: var(--light-grey) !important;
+    cursor: text;
+    font-family: Courier New, Menlo, Courier, monospace !important;
+    padding: 10px 20px;
+    position: relative
+}
+
+.console-output a {
+    color: var(--light-grey);
+    font-weight: 700
+}
+
+.console-output div.collapseHeader {
+    background-color: var(--light-grey);
+    color: var(--black);
+}
+
+.console-output div.collapseAction p {
+    color: var(--light-grey) !important
+}
+
+.error-inline {
+    color: var(--light-red);
+}
+
+/* Footer */
+.page-footer__links:after {
+    content: $text;
+    margin-left: 15px
+}

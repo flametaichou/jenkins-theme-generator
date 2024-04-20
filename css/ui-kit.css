@@ -1,0 +1,203 @@
+body {
+    margin: 0 !important;
+}
+
+/* Layout */
+.flex {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+.flex--scrollable {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+}
+.flex--vertical {
+    flex-direction: column;
+}
+.flex-item--fill {
+    flex: 1 0;
+}
+.flex-item--fixed {
+    flex: 0 0 auto;
+}
+.flex--gap-1 {
+    gap: 1em;
+}
+
+/* Cards */
+.card {
+    box-shadow: 0px 15px 6px rgba(0, 0, 0, 0.01), 
+                0px 8px 5px rgba(0, 0, 0, 0.05), 
+                0px 4px 4px rgba(0, 0, 0, 0.09), 
+                0px 1px 2px rgba(0, 0, 0, 0.1), 
+                0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: var(--white);
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+.card__title {
+    padding: 1em;
+}
+.card__content {
+    padding: 1.5em;
+}
+.card__footer {
+    padding: 1em;
+}
+
+/* Inputs */
+.input {
+    border-radius: 5px;
+    border: 1px solid var(--gray0);
+    cursor: pointer;
+    overflow: hidden;
+}
+input, textarea {
+    appearance: none;
+    outline: 0;
+    font: inherit;
+
+    padding: 0.5em 0.8em;;
+    line-height: 24px;
+
+    display: block;
+    min-width: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border-radius: 5px;
+    border: 1px solid var(--gray0);
+
+    cursor: pointer;
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid var(--secondary);
+}
+
+/* Buttons */
+button {
+    background-color: var(--gray0);
+    color: var(--gray4) !important;
+    border-radius: 5px;
+    font-weight: bold;
+    line-height: 32px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    border: none;
+}
+
+button.large {
+    padding: 0.5em 0.8em;
+    font-size: 16px;
+}
+button:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+button:active {
+    background-color: var(--white);
+}
+
+button[disabled] {
+    background-color: var(--gray2) !important;
+    color: var(--white) !important;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+button.block {
+    width: 100%;
+}
+
+button.primary {
+    background-color: var(--primary);
+    color: var(--white) !important;
+}
+button.primary:hover {
+    background-color: var(--primary-lighten2);
+}
+button.primary:active {
+    background-color: var(--primary-lighten1);
+}
+
+button.secondary {
+    background-color: var(--secondary);
+    color: var(--white) !important;
+}
+button.secondary:hover {
+    background-color: var(--secondary-lighten2);
+}
+button.secondary:active {
+    background-color: var(--secondary-lighten1);
+}
+
+/* Text */
+.text--muted {
+    color: var(--gray3);
+}
+.text--small {
+    font-size: 12px;
+}
+ul li {
+    padding-bottom: 0.5em;
+}
+a {
+    color: var(--secondary);
+}
+a:active {
+    color: var(--secondary-lighten1)
+}
+
+/* Chips */
+.chip {
+    border: 1px solid var(--gray1);
+    background-color: var(--gray0);
+    color: var(--gray4);
+
+    font-size: 90%;
+    padding: 0.125rem 0.25rem;
+    word-break: break-word;
+    border-radius: 5px;
+}
+
+/* Typography */
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h2 {
+    margin-block-start: 1em;
+    margin-block-end: 0.5em;
+}
+
+h3 {
+    margin-block-start: 0.75em;
+    margin-block-end: 0.3em;
+}
+
+h4 {
+    margin-block-start: 0.75em;
+    margin-block-end: 0.3em;
+}
+
+h5 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h6 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p {
+    margin-block-start: 0;
+}
