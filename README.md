@@ -1,5 +1,5 @@
 ## Jenkins Theme Generator
-![Logo](/images/logo.svg)  
+![Logo](/images/logo.png)  
 
 *A tool for customization of [Jenkins](https://www.jenkins.io/) appearance*
 
